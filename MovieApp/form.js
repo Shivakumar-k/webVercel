@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const user = JSON.parse(localStorage.getItem(email));
             if (user && user.password === password) {
                 localStorage.setItem('loggedInUser', email);
-                window.location.href = 'home.html'; // Redirect to home page after login
+                window.location.href = 'index.html'; // Redirect to home page after login
             } else {
                 showAlert('Invalid email or password');
             }
