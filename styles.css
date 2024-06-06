@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em 1em;
+    margin-top: 120px; /* Adjusted for fixed header */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-form, .search-results {
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.booking-form h2, .search-results h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.search-results .result {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    background-color: #fafafa;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

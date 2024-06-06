@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" ></script>
+</head>
+
+<body>
+    <h1>Sign in</h1>
+    <form class="formClass" name="newForm" onsubmit="return formValidation()">
+        <div>
+            Name: <span style="color: red;">*</span> <input type="text" id="name" placeholder="name"  required >
+            <span id="nameSpan" style="color: red;" >Enter your Name</span>
+        </div>
+        <br>
+        <div>
+            Email: <span style="color: red;">*</span> <input type="email" id="email" placeholder="abc@gmail.com" >
+            <span id="emailSpan" style="color: rgb(25, 0, 255);" ></span>
+        </div>
+        <br>
+        <div>
+            Password: <input type="text" id="pass">
+        </div>
+        <div>
+           Confirm Password: <input type="text" id="pass1" ><span id="confirmSpan" style="color: red;" ></span>
+        </div>
+        <div>
+            Number: <input type="text" id="num" maxlength="10"><span id="numSpan" style="color: red;" ></span>
+         </div>
+        <div>
+            <input class="btnClass"  type="submit" value="Submit"  class="formValidation()">
+            <input class="btnClass" type="reset" value="Reset"  >
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graduation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.js">
+    <script src="form.js"></script>
+</head>
+<body>
+	<h1 id="h1Id" onclick="changeH1()" >Graduation Form </h1>
+    
+	<form>
+		<div class="container" name = "container">
+			<div>
+				<label>
+                    Name:<input type="text" id="name" name="name" >
+                </label>
+			</div>
+            <div>
+                <label>
+                    Gender: <input type="radio" id="gender1" name="gen" value="Male">Male
+                            <input type="radio" id="gender1" name="gen" Value="Female">Female
+                </label>
+            </div>
+            <div>
+                <label>
+                    Collage: <input type="text" id="collage" name="collage" >
+                </label>
+            </div>
+            <div>
+                <label>
+                    Degree: <input type="text" id="degree" name="degree" >
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Branch: <input type="text" id="branch" name="branch" >
+                </label>
+            </div>
+            <div>
+                <label>
+                    Passed out Year: <input type="number" id="year" name="year" min="2000" max="2023" >
+                </label>
+            </div>
+			<div>
+				<label>
+                    Email:	<input type="email" id="email" name="email" >
+                </label>
+			</div>
+            <div>
+				<label>
+                    Password:	<input type="text" id="pass1" name="pass1" >
+                </label>
+			</div>
+            <div>
+				<label>
+                    Confirm Password:	<input type="text" id="pass2" name="pass2" >
+                </label>
+			</div>
+            <div>
+                <label>
+                    Mobile Number: <input type="number" id="number" name="number">
+                </label>
+            </div>
+		   <div>
+		        <label>
+                    Address:  <input type="textarea" id="address" name="address">
+                </label>
+            </div>
+        </div>
+		<button class="formValidation" type="submit" value="Submit" id="SUBMIT" onclick="formValidaton()">Submit</button>
+        <button type="reset" value="reset">Reset
+	</form>
+</body>
+</html>

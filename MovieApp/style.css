@@ -1,0 +1,213 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50; /* Dark blue */
+    --secondary-color: #34495e; /* Dark grayish blue */
+    --accent-color: #e67e22; /* Orange */
+    --text-color: #ecf0f1; /* Light gray */
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Login and Register Button Styles */
+nav a {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Search Input Styles */
+.search {
+    background-color: #f2f2f2; /* Light grey background */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px; /* Add some space between search input and buttons */
+}
+
+/* Overlay Styles*/
+
+/* Navigation Arrows Styles */
+.navigation-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.arrow {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 50%;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter semi-transparent white background on hover */
+}
+
+
+/* Header Styles */
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+
+/* Search Bar Styles */
+.search {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-family: inherit;
+}
+
+.search:focus {
+    outline: 0;
+    background-color: var(--accent-color);
+}
+
+.search::placeholder {
+    color: #95a5a6; /* Light gray */
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Movie Card Styles */
+.movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover {
+    transform: translateY(-5px);
+}
+
+/* Movie Info Styles */
+.movie-info {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.page {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.page.disabled {
+    cursor: not-allowed;
+    color: #95a5a6; /* Light gray */
+}
+
+.current {
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* "Know More" Button Styles */
+.know-more {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.know-more:hover {
+    background-color: #d35400; /* Darker shade of orange */
+}
+/* Navigation Arrows Styles */
+.navigation-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrow {
+    font-size: 40px;
+    color: #fff; /* Adjust the color to match your design */
+}
+
+.left-arrow {
+    margin-left: 20px;
+}
+
+.right-arrow {
+    margin-right: 20px;
+}
+

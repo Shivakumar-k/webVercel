@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+    <div class="form">
+        <h1 class="heading">Register</h1>
+        <input type="text" placeholder="Name" autocomplete="on" class="name" required>
+        <input type="email" placeholder="Email" autocomplete="on" class="email" required>
+        <input type="password" placeholder="Password" autocomplete="off" class="password" required>
+        <button class="submit-btn">Register</button>
+        <a href="login.html" class="link">Already have an account? Log in here</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const alertBox = document.querySelector('.alert-box');
+            const alertMessage = document.querySelector('.alert');
+
+            function showAlert(message) {
+                alertMessage.textContent = message;
+                alertBox.style.display = 'block';
+                setTimeout(() => {
+                    alertBox.style.display = 'none';
+                }, 3000);
+            }
+
+            const submitBtn = document.querySelector('.submit-btn');
+
+            submitBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const name = document.querySelector('.name').value;
+                const email = document.querySelector('.email').value;
+                const password = document.querySelector('.password').value;
+
+                // Registration logic
+                if (localStorage.getItem(email)) {
+                    showAlert('Email already exists');
+                } else {
+                    const user = { name, email, password };
+                    localStorage.setItem(email, JSON.stringify(user));
+                    localStorage.setItem('loggedInUser', email);
+                    window.location.href = 'login.html'; // Redirect to home page after registration
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
