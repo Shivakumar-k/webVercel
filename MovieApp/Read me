@@ -1,0 +1,7 @@
+Key Features:
+User authentication for sign-in and sign-up.
+Home screen displaying movie search option.
+Ability to create lists of movies (similar to playlists).
+Differentiation between public and private lists.
+Integration with the OMDB API for movie search functionality.
+Aesthetic layout inspired by other popular websites and applications.
