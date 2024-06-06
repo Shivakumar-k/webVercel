@@ -1,16 +1,16 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
-/* Global Styles */
+
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --primary-color: #2c3e50; /* Dark blue */
-    --secondary-color: #34495e; /* Dark grayish blue */
-    --accent-color: #e67e22; /* Orange */
-    --text-color: #ecf0f1; /* Light gray */
+    --primary-color: #2c3e50; 
+    --secondary-color: #34495e; 
+    --accent-color: #e67e22; 
+    --text-color: #ecf0f1; 
 }
 
 body {
@@ -18,16 +18,16 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-/* Navigation Bar Styles */
+
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-/* Login and Register Button Styles */
+
 nav a {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50; 
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -39,22 +39,24 @@ nav a {
     transition: background-color 0.3s;
 }
 
-nav a:hover {
-    background-color: #45a049; /* Darker green on hover */
+nav a {
+    margin-right: 10px; 
 }
 
-/* Search Input Styles */
+nav a:hover {
+    background-color: #45a049; 
+}
+
+
 .search {
-    background-color: #f2f2f2; /* Light grey background */
-    border: 1px solid #ccc; /* Light grey border */
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
     border-radius: 5px;
     padding: 10px;
-    margin-right: 10px; /* Add some space between search input and buttons */
+    margin-right: 10px; 
 }
 
-/* Overlay Styles*/
 
-/* Navigation Arrows Styles */
 .navigation-arrows {
     position: absolute;
     top: 50%;
@@ -64,7 +66,7 @@ nav a:hover {
 
 .arrow {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.5); 
     border-radius: 50%;
     margin: 0 5px;
     text-decoration: none;
@@ -75,11 +77,11 @@ nav a:hover {
 }
 
 .arrow:hover {
-    background-color: rgba(255, 255, 255, 0.8); /* Lighter semi-transparent white background on hover */
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 
-/* Header Styles */
+
 header {
     padding: 1rem;
     display: flex;
@@ -87,7 +89,7 @@ header {
     background-color: var(--secondary-color);
 }
 
-/* Search Bar Styles */
+
 .search {
     background-color: transparent;
     border: 2px solid var(--accent-color);
@@ -104,17 +106,17 @@ header {
 }
 
 .search::placeholder {
-    color: #95a5a6; /* Light gray */
+    color: #95a5a6;
 }
 
-/* Main Content Styles */
+
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Movie Card Styles */
+
 .movie {
     width: 300px;
     margin: 1rem;
@@ -130,7 +132,7 @@ main {
     transform: translateY(-5px);
 }
 
-/* Movie Info Styles */
+
 .movie-info {
     color: var(--text-color);
     display: flex;
@@ -144,7 +146,7 @@ main {
     margin-top: 0;
 }
 
-/* Pagination Styles */
+
 .pagination {
     display: flex;
     margin: 10px 30px;
@@ -160,7 +162,7 @@ main {
 
 .page.disabled {
     cursor: not-allowed;
-    color: #95a5a6; /* Light gray */
+    color: #95a5a6; 
 }
 
 .current {
@@ -171,7 +173,6 @@ main {
     font-weight: 600;
 }
 
-/* "Know More" Button Styles */
 .know-more {
     background-color: var(--accent-color);
     color: var(--text-color);
@@ -185,9 +186,9 @@ main {
 }
 
 .know-more:hover {
-    background-color: #d35400; /* Darker shade of orange */
+    background-color: #d35400;
 }
-/* Navigation Arrows Styles */
+
 .navigation-arrows {
     position: absolute;
     top: 50%;
@@ -200,7 +201,7 @@ main {
 
 .arrow {
     font-size: 40px;
-    color: #fff; /* Adjust the color to match your design */
+    color: #fff; 
 }
 
 .left-arrow {

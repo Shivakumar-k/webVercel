@@ -1,4 +1,4 @@
-const API_KEY = 'bb91d3d'; // Replace with your OMDb API key
+const API_KEY = 'bb91d3d'; 
 const BASE_URL = 'https://www.omdbapi.com/';
 const IMG_PLACEHOLDER = 'http://via.placeholder.com/1080x1580';
 const main = document.getElementById('main');
@@ -12,11 +12,11 @@ let currentPage = 1;
 let totalPages = 1;
 let lastUrl = '';
 
-// Check if user is logged in
+// Checking if user is logged in
 document.addEventListener('DOMContentLoaded', () => {
     const loggedInUser = localStorage.getItem('loggedInUser');
     if (!loggedInUser) {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     } else {
         fetchMovies();
     }

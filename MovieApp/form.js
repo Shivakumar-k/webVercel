@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const user = JSON.parse(localStorage.getItem(email));
             if (user && user.password === password) {
                 localStorage.setItem('loggedInUser', email);
-                window.location.href = 'index.html'; // Redirect to home page after login
+                window.location.href = 'home.html'; 
             } else {
                 showAlert('Invalid email or password');
             }
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const user = { name, email, password };
                 localStorage.setItem(email, JSON.stringify(user));
                 localStorage.setItem('loggedInUser', email);
-                window.location.href = 'login.html'; // Redirect to login page after registration
+                window.location.href = 'index.html'; 
             }
         }
     });

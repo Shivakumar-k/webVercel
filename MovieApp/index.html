@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Movie App</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-        </nav>
-        <form id="form">
-            <input type="text" placeholder="Search" id="search" class="search">
-        </form>
-    </header>
-    <div id="tags"></div>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content" id="overlay-content"></div>
-        <div class="navigation-arrows">
-            <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
-            <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
-        </div>
+    <div class="alert-box">
+        <p class="alert"></p>
     </div>
-    
-    <main id="main"></main>
-    <div class="pagination">
-        <div class="page" id="prev">Previous Page</div>
-        <div class="current" id="current">1</div>
-        <div class="page" id="next">Next Page</div>
+    <div class="form">
+        <h1 class="heading">Login</h1>
+        <input type="email" placeholder="Email"  class="email" required>
+        <input type="password" placeholder="Password"  class="password" required>
+        <button class="submit-btn">Log In</button>
+        <a href="register.html" class="link">Don't have an account? Register one</a>
     </div>
+                <!--login page-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const alertBox = document.querySelector('.alert-box');
+            const alertMessage = document.querySelector('.alert');
 
-    <script src="script.js"></script>
+            function showAlert(message) {
+                alertMessage.textContent = message;
+                alertBox.style.display = 'block';
+                setTimeout(() => {
+                    alertBox.style.display = 'none';
+                }, 3000);
+            }
+
+            const submitBtn = document.querySelector('.submit-btn');
+
+            submitBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const email = document.querySelector('.email').value;
+                const password = document.querySelector('.password').value;
+
+                // Login logic
+                const user = JSON.parse(localStorage.getItem(email));
+                if (user && user.password === password) {
+                    localStorage.setItem('loggedInUser', email);
+                    window.location.href = 'home.html'; 
+                } else {
+                    showAlert('Invalid email or password');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 

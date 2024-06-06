@@ -16,7 +16,7 @@
         <input type="email" placeholder="Email" autocomplete="on" class="email" required>
         <input type="password" placeholder="Password" autocomplete="off" class="password" required>
         <button class="submit-btn">Register</button>
-        <a href="login.html" class="link">Already have an account? Log in here</a>
+        <a href="index.html" class="link">Already have an account? Log in here</a>
     </div>
 
     <script>
@@ -48,7 +48,7 @@
                     const user = { name, email, password };
                     localStorage.setItem(email, JSON.stringify(user));
                     localStorage.setItem('loggedInUser', email);
-                    window.location.href = 'login.html'; // Redirect to home page after registration
+                    window.location.href = 'index.html'; 
                 }
             });
         });
